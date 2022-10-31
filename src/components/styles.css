@@ -4,9 +4,44 @@
     align-items: center;
     gap: 1rem;
 }
-
+.logo-flex {
+    gap: 0.1rem
+}
 .navbar {
     background-color: #ddd;
     height: 3rem;
     padding: 0.5rem 1.5rem;
+}
+
+
+/* ----------------- Drawer ----------------- */
+
+.drawer-div {
+    width: 10rem;
+    padding: 1rem 2rem;
+}
+.links-div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.drawer-navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: #ddd;
+}
+.drawer-logo-div {
+    height: 3rem;
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.drawer-logo-flex {
+    display: flex;
+    gap: 0.1rem;
+    align-items: center;
 }

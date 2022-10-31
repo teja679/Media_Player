@@ -1,16 +1,19 @@
 import './styles.css'
-import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import PlayCircleRoundedIcon from '@mui/icons-material/PlayCircleRounded';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import KeyboardVoiceRoundedIcon from '@mui/icons-material/KeyboardVoiceRounded';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
+import { useState } from 'react';
+import TemporaryDrawer from './Drawer';
 
 const Navbar = () => {
+    const [open, setOpen] = useState(true)
   return (
     <div className='navbar'>
     <div className='logo-div'>
-        <MenuRoundedIcon />
+        {/* <MenuRoundedIcon /> */}
+        <TemporaryDrawer open={open} setOpen={setOpen} />
         <div className='logo-flex'>
             <PlayCircleRoundedIcon />
             Media Player
