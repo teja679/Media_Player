@@ -8,7 +8,7 @@ import { useState } from 'react';
 import TemporaryDrawer from './Drawer';
 
 const Navbar = () => {
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState(false)
   return (
     <div className='navbar'>
     <div className='logo-div'>
